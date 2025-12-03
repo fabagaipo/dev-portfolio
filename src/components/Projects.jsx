@@ -24,7 +24,7 @@ export default function Projects() {
       description: 'Modern portfolio website with 3D animations, smooth transitions, and responsive design using cutting-edge web technologies.',
       image: '/portfolio.png',
       technologies: ['React', 'Three.js', 'TailwindCSS', 'Framer Motion', 'EmailJS'],
-      liveUrl: 'https://faynedev.vercel.app',
+      liveUrl: 0,
       githubUrl: 'https://github.com/fabagaipo/dev-portfolio',
     },
     // { 
