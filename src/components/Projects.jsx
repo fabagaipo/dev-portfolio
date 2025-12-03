@@ -137,6 +137,8 @@ export default function Projects() {
                   {project.liveUrl !== 0 && project.liveUrl && (
                     <a
                       href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm font-medium"
                     >
                       <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,6 +149,8 @@ export default function Projects() {
                   )}
                   <a
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm font-medium"
                   >
                     <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
