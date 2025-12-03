@@ -1,3 +1,5 @@
+import { PiInfinityBold } from "react-icons/pi";
+
 export default function About() {
   return (
     <section id="about" className="relative py-20 px-4">
@@ -14,20 +16,20 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a full stack developer with a keen eye for design and a love for creating seamless user experiences. With expertise in modern web technologies.
+              I'm a full stack developer who loves creating products that feel as good as they look. I blend technical skill with thoughtful design to build smooth, responsive, and user-focused applications.
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              My journey in web development started with curiosity and has evolved into a career focused on building applications and debugging. I enjoy staying up-to-date with the latest industry trends and best practices.
+              My journey in web development started with curiosity and has evolved into a career focused on solving problems and crafting clean interfaces. I also enjoy staying up-to-date with the latest industry trends and best practices.
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-purple-500/20">
-                <div className="text-3xl font-bold text-purple-400 mb-2">2+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">3+</div>
                 <div className="text-gray-400">Years Experience</div>
               </div>
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 border border-purple-500/20">
-                <div className="text-3xl font-bold text-pink-400 mb-2">∞</div>
+                <div className="text-3xl font-bold text-pink-400 mb-2"><PiInfinityBold /></div>
                 <div className="text-gray-400">Coffee Cups</div>
               </div>
             </div>
