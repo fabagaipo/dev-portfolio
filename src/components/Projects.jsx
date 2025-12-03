@@ -3,7 +3,7 @@ export default function Projects() {
     {
       id: 1,
       title: 'WebMart',
-      description: 'A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.',
+      description: 'A full-featured e-commerce platform with real-time cart management, product display, and multiple stores to choose from',
       image: '/webmart.png',
       technologies: ['React', 'Django', 'PostgreSQL', 'TailwindCSS', 'Docker'],
       liveUrl: 'https://webmart-ph.vercel.app',
@@ -11,6 +11,15 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: 'WebMart Seller',
+      description: 'A full-featured e-commerce platform with real-time inventory management, order tracking, and admin dashboard.',
+      image: '/webmartseller.png',
+      technologies: ['React', 'Django', 'PostgreSQL', 'TailwindCSS', 'Docker'],
+      liveUrl: 'https://webmart-seller.vercel.app',
+      githubUrl: 'https://github.com/fabagaipo/webmart-seller',
+    },
+    {
+      id: 3,
       title: 'Portfolio Website',
       description: 'Modern portfolio website with 3D animations, smooth transitions, and responsive design using cutting-edge web technologies.',
       image: '/portfolio.png',
@@ -37,7 +46,7 @@ export default function Projects() {
     //   githubUrl: '#',
     // },
     {
-      id: 3,
+      id: 4,
       title: 'REST API Service',
       description: 'Scalable REST API service with authentication, rate limiting, and comprehensive documentation for mobile applications.',
       image: '/restapi.png',
@@ -55,16 +64,16 @@ export default function Projects() {
     //   githubUrl: '#',
     // },
     {
-      id: 4,
+      id: 5,
       title: 'Ping Pong',
       description: 'Basic pingpong game made in godot',
       image: '/pong.png',
       technologies: ['Godot', 'GDScript'],
-      liveUrl: 'fayasdfghjkl.itch.io/basic-pong',
+      liveUrl: 'https://fayasdfghjkl.itch.io/basic-pong',
       githubUrl: 'https://github.com/fabagaipo/godot-pingpong',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Minesweeper',
       description: 'Pure python made minesweeper game with difficulty and high scores',
       image: '/minesweeper.png',
@@ -153,7 +162,7 @@ export default function Projects() {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <a
             href="#"
             className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-full hover:from-purple-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
@@ -163,7 +172,7 @@ export default function Projects() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
       
       <style jsx>{`
