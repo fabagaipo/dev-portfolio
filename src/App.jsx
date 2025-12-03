@@ -10,7 +10,6 @@ import './index.css'
 
 function App() {
   useEffect(() => {
-    // Smooth scroll behavior
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault()

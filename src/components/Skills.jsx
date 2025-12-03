@@ -5,19 +5,19 @@ export default function Skills() {
   
   const skills = {
     frontend: [
-      { name: 'React', level: 90, color: 'from-blue-400 to-cyan-400' },
-      { name: 'Vue.js', level: 85, color: 'from-green-400 to-emerald-400' },
-      { name: 'Javascript', level: 88, color: 'from-blue-500 to-blue-600' },
+      { name: 'Vue.js', level: 95, color: 'from-green-400 to-emerald-400' },
+      { name: 'React', level: 85, color: 'from-blue-400 to-cyan-400' },
+      { name: 'Javascript', level: 90, color: 'from-blue-500 to-blue-600' },
       { name: 'TailwindCSS', level: 92, color: 'from-purple-400 to-pink-400' },
     ],
     backend: [
-      { name: 'Django', level: 88, color: 'from-green-500 to-green-600' },
-      { name: 'Python', level: 85, color: 'from-blue-400 to-yellow-400' },
-      { name: 'PostgreSQL', level: 82, color: 'from-blue-600 to-blue-800' },
-      { name: 'MongoDB', level: 86, color: 'from-green-600 to-green-800' },
+      { name: 'Django', level: 90, color: 'from-green-500 to-green-600' },
+      { name: 'Python', level: 90, color: 'from-blue-400 to-yellow-400' },
+      { name: 'PostgreSQL', level: 85, color: 'from-blue-600 to-blue-800' },
+      { name: 'MongoDB', level: 80, color: 'from-green-600 to-green-800' },
     ],
     tools: [
-      { name: 'Git', level: 90, color: 'from-orange-400 to-red-400' },
+      { name: 'Git', level: 95, color: 'from-orange-400 to-red-400' },
       { name: 'Docker', level: 85, color: 'from-blue-400 to-blue-600' },
       { name: 'Figma', level: 82, color: 'from-purple-400 to-pink-400' },
       { name: 'VS Code', level: 95, color: 'from-blue-500 to-blue-700' },

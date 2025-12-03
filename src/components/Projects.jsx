@@ -4,55 +4,73 @@ export default function Projects() {
       id: 1,
       title: 'WebMart',
       description: 'A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.',
-      image: '/api/placeholder/400/300',
+      image: '/webmart.png',
       technologies: ['React', 'Django', 'PostgreSQL', 'TailwindCSS', 'Docker'],
       liveUrl: 'https://webmart-ph.vercel.app',
       githubUrl: 'https://github.com/fabagaipo/webmart',
     },
-    { 
+    {
       id: 2,
-      title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.',
-      image: '/api/placeholder/400/300',
-      technologies: ['Vue.js', 'Express', 'PostgreSQL', 'Socket.io'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with location-based forecasts, interactive maps, and detailed meteorological data visualization.',
-      image: '/api/placeholder/400/300',
-      technologies: ['React', 'TypeScript', 'TailwindCSS', 'Weather API'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
-    {
-      id: 4,
-      title: 'REST API Service',
-      description: 'Scalable REST API service with authentication, rate limiting, and comprehensive documentation for mobile applications.',
-      image: '/api/placeholder/400/300',
-      technologies: ['Node.js', 'Express', 'JWT', 'Redis'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
-    {
-      id: 5,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with real-time data visualization and scheduling capabilities.',
-      image: '/api/placeholder/400/300',
-      technologies: ['Next.js', 'Chart.js', 'Prisma', 'PostgreSQL'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
-    {
-      id: 6,
       title: 'Portfolio Website',
       description: 'Modern portfolio website with 3D animations, smooth transitions, and responsive design using cutting-edge web technologies.',
-      image: '/api/placeholder/400/300',
+      image: '/portfolio.png',
       technologies: ['React', 'Three.js', 'TailwindCSS', 'Framer Motion', 'EmailJS'],
       liveUrl: '#',
       githubUrl: '#',
+    },
+    // { 
+    //   id: 2,
+    //   title: 'Task Management App',
+    //   description: 'Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.',
+    //   image: '/api/placeholder/400/300',
+    //   technologies: ['Vue.js', 'Express', 'PostgreSQL', 'Socket.io'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Weather Dashboard',
+    //   description: 'Beautiful weather dashboard with location-based forecasts, interactive maps, and detailed meteorological data visualization.',
+    //   image: '/api/placeholder/400/300',
+    //   technologies: ['React', 'TypeScript', 'TailwindCSS', 'Weather API'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    // },
+    {
+      id: 3,
+      title: 'REST API Service',
+      description: 'Scalable REST API service with authentication, rate limiting, and comprehensive documentation for mobile applications.',
+      image: '/restapi.png',
+      technologies: ['Node.js', 'Express', 'JWT', 'Redis', 'SwaggerUI', 'Docker'],
+      liveUrl: 0,
+      githubUrl: '#',
+    },
+    // {
+    //   id: 3,
+    //   title: 'Social Media Dashboard',
+    //   description: 'Analytics dashboard for social media management with real-time data visualization and scheduling capabilities.',
+    //   image: '/api/placeholder/400/300',
+    //   technologies: ['Next.js', 'Chart.js', 'Prisma', 'PostgreSQL'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    // },
+    {
+      id: 4,
+      title: 'Ping Pong',
+      description: 'Basic pingpong game made in godot',
+      image: '/pong.png',
+      technologies: ['Godot', 'GDScript'],
+      liveUrl: 'fayasdfghjkl.itch.io/basic-pong',
+      githubUrl: 'https://github.com/fabagaipo/godot-pingpong',
+    },
+    {
+      id: 5,
+      title: 'Minesweeper',
+      description: 'Pure python made minesweeper game with difficulty and high scores',
+      image: '/minesweeper.png',
+      technologies: ['Python'],
+      liveUrl: 0,
+      githubUrl: 'https://github.com/fabagaipo/minesweeper',
     },
   ]
   
@@ -77,11 +95,12 @@ export default function Projects() {
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
               }}
             >
-              <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="text-4xl mb-4">🚀</div>
-                  <p className="text-gray-400 text-sm">Project Preview</p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-blue-500/20 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
               
               <div className="p-6">
@@ -92,27 +111,31 @@ export default function Projects() {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full border border-purple-500/30"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className={`mb-4 ${project.technologies.length <= 2 ? 'h-10' : 'min-h-[84px]'}`}>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full border border-purple-500/30"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.liveUrl}
-                    className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm font-medium"
-                  >
-                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                    Live Demo
-                  </a>
+                  {project.liveUrl !== 0 && project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm font-medium"
+                    >
+                      <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      Live Demo
+                    </a>
+                  )}
                   <a
                     href={project.githubUrl}
                     className="flex items-center text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm font-medium"
