@@ -52,7 +52,7 @@ export default function Projects() {
       image: '/restapi.png',
       technologies: ['Node.js', 'Express', 'JWT', 'Redis', 'SwaggerUI', 'Docker'],
       liveUrl: 0,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/fabagaipo/rest_api',
     },
     // {
     //   id: 3,
